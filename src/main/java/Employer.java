@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Employer {
+public class Employer{
     // region fields
     private String tabnum;
     private String phone;
@@ -8,12 +8,19 @@ public class Employer {
     private String secondName;
     private String lastName;
     private int workExp;
-    private LocalDate birthday;
     // endregion
     public Employer(String lastName, String firstName, String secondName){
         this.lastName = lastName;
         this.firstName = firstName;
         this.secondName = secondName;
+    }
+    public Employer(String tabnum,String lastName, String firstName, String secondName, String phone, int workExp){
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.tabnum = tabnum;
+        this.phone = phone;
+        this.workExp = workExp;
     }
     // region getters
     public String getTabnum() {
@@ -62,14 +69,6 @@ public class Employer {
 
     public void setWorkExp(int workExperience) {
         this.workExp = workExperience;
-    }
-
-    public LocalDate getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
     }
     // endregion
 }
