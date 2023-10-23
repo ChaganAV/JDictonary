@@ -6,7 +6,7 @@ import java.util.List;
 public class FileTxt implements Storage{
     File file = new File("employers.txt");
     Employers repository;
-    public FileTxt(Dictonary dictonary){
+    public FileTxt(){
     }
     @Override
     public void save(List<Employer> list) {
